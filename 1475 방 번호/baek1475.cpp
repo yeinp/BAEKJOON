@@ -24,17 +24,17 @@ int main() {
 
 			}
 			else if (i == 6 || (i == 9 && arr[6] < 2)) {
-				if ((arr[6] + arr[9]) % 2 == 0) { //arr[6]+arr[9]°¡ Â¦¼öÀÏ ¶§
+				if ((arr[6] + arr[9]) % 2 == 0) { //arr[6]+arr[9]ê°€ ì§ìˆ˜ì¼ ë•Œ
 					result2 = ((arr[6] + arr[9]) / 2);
 
 				}
-				else  {//arr[6]+arr[9]°¡ È¦¼öÀÏ ¶§
+				else  {//arr[6]+arr[9]ê°€ í™€ìˆ˜ì¼ ë•Œ
 					result2 = ((arr[6] + arr[9]) / 2) +1;
 
 				}
 			}
 			
-			//µÎ°³ÀÇ result Áß max°¡ ÃÖÁ¾ result
+			//ë‘ê°œì˜ result ì¤‘ maxê°€ ìµœì¢… result
 		}
 	}
 	
