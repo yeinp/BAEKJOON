@@ -4,12 +4,12 @@ using namespace std;
 
 int main() {
 	string str = "";
-	cin >> str; //╧╝юз©╜ ют╥б
+	cin >> str; //К╛╦Л·░Л≈╢ Л·┘К═╔
 	int n;
-	cin >> n; //ют╥бгр ╦М╥и╬Н ╟Ё╪Ж
+	cin >> n; //Л·┘К═╔М∙═ К╙┘К═╧Л√╢ Й╟°Л┬≤
 	
-	stack<char> left; //д©╪╜ ©чбй ╫╨ец
-	stack<char> right; //д©╪╜ ©ю╦╔бй ╫╨ец
+	stack<char> left; //Л╩╓Л└° Л≥╪Л╙╫ Л┼╓М┐²
+	stack<char> right; //Л╩╓Л└° Л≤╓К╔╦Л╙╫ Л┼╓М┐²
 
 	for (int i = 0; i < str.size() ; i++) {
 		left.push(str[i]);
@@ -53,7 +53,7 @@ int main() {
 		right.push(left.top());
 		left.pop();
 	}
-	while (!right.empty()) { //left╥н го╦И ╣чюз╦╝╨нем цБ╥б╣й
+	while (!right.empty()) { //leftК║° М∙≤К╘╢ К▓╥Л·░К╕╛К╤─М└╟ Л╤°К═╔К░╗
 		cout << right.top();
 		right.pop();
 	}
