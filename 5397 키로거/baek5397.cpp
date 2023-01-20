@@ -9,7 +9,7 @@ int main() {
 	string str;
 
 	list<char> l1;
-	list<char>::iterator cursor; //for¹® µ¹¾Æ°¥ ¶§ ÀÚµ¿À¸·Î ´ÙÀ½ ÁÖ¼Ò·Î °¡ÀÖÀ½
+	list<char>::iterator cursor; //forë¬¸ ëŒì•„ê°ˆ ë•Œ ìë™ìœ¼ë¡œ ë‹¤ìŒ ì£¼ì†Œë¡œ ê°€ìˆìŒ
 
 	while (n--) {
 		cin >> str;
@@ -34,7 +34,7 @@ int main() {
 
 			else if (str[i] == '-')
 				if (cursor != l1.begin()) {
-					cursor = l1.erase(--cursor); //Áö±İ Ä¿¼­ÀÇ ¾ÕÀÇ ¹®ÀÚ¸¦ Áö¿î´Ù
+					cursor = l1.erase(--cursor); //ì§€ê¸ˆ ì»¤ì„œì˜ ì•ì˜ ë¬¸ìë¥¼ ì§€ìš´ë‹¤
 				}
 				else
 					continue;
@@ -43,7 +43,7 @@ int main() {
 				l1.insert(cursor, str[i]);
 		}
 		for (cursor = l1.begin(); cursor != l1.end(); cursor++)
-			cout << *cursor; //cursor->ÁÖ¼Ò¸¦ ´ã°í ÀÖÀ½, *->ÁÖ¼Ò¸¦ ÂüÁ¶ÇØ¼­ °ªÀ» °¡Á®¿È
+			cout << *cursor; //cursor->ì£¼ì†Œë¥¼ ë‹´ê³  ìˆìŒ, *->ì£¼ì†Œë¥¼ ì°¸ì¡°í•´ì„œ ê°’ì„ ê°€ì ¸ì˜´
 		cout << "\n";
 
 	}
