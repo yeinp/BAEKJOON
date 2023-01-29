@@ -1,6 +1,6 @@
 #include <iostream>
 #include <deque>
-#include <algorithm> //ÀÌ°Å ¾È½á¼­ ¹éÁØ Æ²·È¾úÀ½
+#include <algorithm> //ì´ê±° ì•ˆì¨ì„œ ë°±ì¤€ í‹€ë ¸ì—ˆìŒ
 using namespace std;
 
 int main() {
@@ -9,7 +9,7 @@ int main() {
 	cin.tie(0);
 
 	int n, num;
-	cin >> n >> num; //Å¥ÀÇ Å©±â >> »ÌÀ¸·Á°í ÇÏ´Â ¼öÀÇ °³¼ö
+	cin >> n >> num; //íì˜ í¬ê¸° >> ë½‘ìœ¼ë ¤ê³  í•˜ëŠ” ìˆ˜ì˜ ê°œìˆ˜
 
 	deque <int> cir;
 
@@ -17,14 +17,14 @@ int main() {
 		cir.push_back(i);
 	}
 
-	int cnt = 0; //ÃÖ¼Ú°ª Ãâ·Â
+	int cnt = 0; //ìµœì†Ÿê°’ ì¶œë ¥
 	int index;
 
 	while (num--) {
 		int vote;
-		cin >> vote; //»Ì¾Æ¾ßÇÏ´Â ¼ø¼­
+		cin >> vote; //ë½‘ì•„ì•¼í•˜ëŠ” ìˆœì„œ
 
-		index = find(cir.begin(), cir.end(), vote) - cir.begin(); //»Ì¾Æ¾ßµÇ´Â ¼ıÀÚÀÇ À§Ä¡
+		index = find(cir.begin(), cir.end(), vote) - cir.begin(); //ë½‘ì•„ì•¼ë˜ëŠ” ìˆ«ìì˜ ìœ„ì¹˜
 
 		while (vote != cir.front()) {
 			if (index < cir.size() - index) {
