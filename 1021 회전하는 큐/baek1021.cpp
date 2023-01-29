@@ -27,12 +27,12 @@ int main() {
 		index = find(cir.begin(), cir.end(), vote) - cir.begin(); //뽑아야되는 숫자의 위치
 
 		while (vote != cir.front()) {
-			if (index < cir.size() - index) {
+			if (index < cir.size() - index) { //왼쪽으로 이동
 				cir.push_back(cir.front());
 				cir.pop_front();
 				cnt++;
 			}
-			else if (index >= cir.size() - index) {
+			else if (index >= cir.size() - index) { //오른쪽으로 이동
 				cir.push_front(cir.back());
 				cir.pop_back();
 				cnt++;
