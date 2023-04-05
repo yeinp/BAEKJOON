@@ -6,7 +6,7 @@ int main() {
 	int n;
 	cin >> n;
 	int cnt = 0;
-	//666µé¾îÀÖ´Â ¼ıÀÚ Ã£À¸¸é cnt++, ÀÔ·Â°ª°ú cnt°¡ °°¾ÆÁö¸é break
+	//666ë“¤ì–´ìˆëŠ” ìˆ«ì ì°¾ìœ¼ë©´ cnt++, ì…ë ¥ê°’ê³¼ cntê°€ ê°™ì•„ì§€ë©´ break
 	int movie = 665;
 	while (true) {
 		if (to_string(movie).find("666") != string::npos) {
